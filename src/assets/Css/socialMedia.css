@@ -1,0 +1,57 @@
+
+.social-media-container {
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.social-media {
+  color: #fe9a02;
+  font-size: 20px;
+  font-weight: bold;
+font-family: "Overpass", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-link {
+  text-align: center;
+  margin: 0 20px;
+
+  /* Set width to 100% on small screens */
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.link-title {
+  font-family: "Poppins";
+  cursor: pointer;
+  display: inline-block; /* Make the text inline-block to center it */
+}
+
+.link-title:hover + .social-divider {
+  border-color: #fe9a02;
+  cursor: pointer;
+}
+
+.social-divider {
+  cursor: pointer;
+  border: 2px solid #1f293b;
+
+  border-radius: 5px;
+  transition: border-color 0.3s linear;
+  width: 100%; /* Make the divider take the full width */
+
+  /* Center the divider on small screens */
+  @media (max-width: 600px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

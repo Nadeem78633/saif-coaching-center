@@ -1,0 +1,46 @@
+.book-a-lesson {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: left;
+}
+.dont-miss {
+  display: flex;
+  justify-content: left;
+  font-family: Poppins;
+
+  color: var(--text1);
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.saif-coaching-center {
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.book-class {
+  padding: 5px;
+  background-color: var(--primary);
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+}
+.book-class:hover {
+  background-color: var(--button-hover);
+  color: var(--primary);
+}
+@media screen and (max-width: 600px) {
+  .saif-coaching-center {
+    font-size: 30px;
+  }
+  .book-a-lesson {
+    margin-top: 0px;
+  }
+}

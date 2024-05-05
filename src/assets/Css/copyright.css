@@ -1,0 +1,14 @@
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.copy{
+    color: white;
+    font-family: "Poppins";
+}
+.copy-nadeem{
+    color: #fe9a02;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+}

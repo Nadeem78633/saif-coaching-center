@@ -1,0 +1,21 @@
+.home {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100vh;
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 992px) {
+  .home {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100vh;
+  }
+}
+
+.background-color {
+  background-color: var(--secondary);
+  height: 90vh;
+}

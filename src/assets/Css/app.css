@@ -1,0 +1,15 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+:root {
+  --primary: #192a88;
+  --secondary: #fff1e0;
+  --button-hover:#dcdef7;
+  --text1: #444444
+}
+body {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}

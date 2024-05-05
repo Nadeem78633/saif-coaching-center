@@ -1,0 +1,25 @@
+.app-bar {
+
+  background-color:white ;
+  box-shadow: none;
+  border-bottom: 1 px solid white;
+}
+.project{
+    color: black;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+.project2{
+    color: black;
+    font-family: 'Poppins';
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+.avatar{
+    background: #1f293b;
+    border:white 1.5px solid;
+}
+
+

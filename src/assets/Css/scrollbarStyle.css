@@ -1,0 +1,24 @@
+/* scrollbarStyles.css */
+/* For webkit-based browsers (like Chrome and Safari) */
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px !important; /* width of the scrollbar */
+  height: 8px !important; /* height of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cfdbea; /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary); /* color of the handle */
+  border-radius: 10px; /* Radius of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary); /* color of the handle on hover */
+}
