@@ -30,7 +30,7 @@ function Cards({ teacher }) {
       layout="position"
     >
       <motion.div className="team-card" variants={cardVariants}>
-        <div style={{ margin:'20px'}}>
+        <div style={{ padding: "20px", width: "100%" }}>
           <img src={teacher.img} alt="Img" className="team-card-image" />
         </div>
       </motion.div>
