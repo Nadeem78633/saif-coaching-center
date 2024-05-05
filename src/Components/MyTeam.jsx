@@ -1,6 +1,9 @@
 import "../assets/Css/myTeam.css";
 import { motion } from "framer-motion";
 import { Grid } from "@mui/material";
+import teacher1 from "../assets/img/Teacher/teacher1.jpg";
+import teacher2 from "../assets/img/Teacher/teacher2.jpg";
+import teacher3 from "../assets/img/Teacher/teacher3.jpg";
 
 const cardVariants = {
   offscreen: {
@@ -17,11 +20,7 @@ const cardVariants = {
   },
 };
 
-const hue = (h) => `hsl(${h}, 100%, 50%)`;
-
-function Card({ emoji, hueA, hueB }) {
-  const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
-
+function Cards({ teacher }) {
   return (
     <motion.div
       className="team-card-container"
@@ -30,18 +29,22 @@ function Card({ emoji, hueA, hueB }) {
       viewport={{ once: true, amount: 0.8 }}
       layout="position"
     >
-      <div className="splash" style={{ background }} />
       <motion.div className="team-card" variants={cardVariants}>
-        <img src="" alt="Img" className="team-card-image" />
+        <img
+          src={teacher.img}
+          alt="Img"
+          className="team-card-image"
+          loading="lazy"
+        />
       </motion.div>
     </motion.div>
   );
 }
 
-const food = [
-  ["🍅", 340, 10],
-  ["🍊", 20, 40],
-  ["🍋", 60, 90],
+const teachers = [
+  { id: 1, img: teacher1 },
+  { id: 2, img: teacher2 },
+  { id: 3, img: teacher3 },
 ];
 
 const MyTeam = () => {
@@ -55,9 +58,9 @@ const MyTeam = () => {
         paddingRight: "20px",
       }}
     >
-      {food.map(([emoji, hueA, hueB]) => (
-        <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-          <Card emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />
+      {teachers.map((teacher) => (
+        <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
+          <Cards teacher={teacher} />
         </Grid>
       ))}
     </Grid>
