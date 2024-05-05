@@ -1,6 +1,6 @@
 import "../assets/Css/myTeam.css";
 import { motion } from "framer-motion";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
 import teacher2 from "../assets/img/Teacher/teacher2.jpeg";
 import teacher3 from "../assets/img/Teacher/teacher3.jpeg";
@@ -46,21 +46,24 @@ const teachers = [
 
 const MyTeam = () => {
   return (
-    <Grid
-      container
-      spacing={10}
-      style={{
-        marginBottom: "60px",
-        paddingLeft: "20px",
-        paddingRight: "20px",
-      }}
-    >
-      {teachers.map((teacher) => (
-        <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-          <Cards teacher={teacher} />
-        </Grid>
-      ))}
-    </Grid>
+    <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
+      <Typography variant="h2" className="my-team" gutterBottom={false}>
+        My Team
+      </Typography>
+      <Grid
+        container
+        spacing={4}
+        style={{
+          marginBottom: "60px",
+        }}
+      >
+        {teachers.map((teacher) => (
+          <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+            <Cards teacher={teacher} />
+          </Grid>
+        ))}
+      </Grid>
+    </div>
   );
 };
 export default MyTeam;
