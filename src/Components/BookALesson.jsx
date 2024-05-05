@@ -11,7 +11,7 @@ const BookALesson = () => {
           <div className="img-container">
             <CardMedia
               component="img"
-              height="150"
+              height="180"
               image={owner}
               alt="green iguana"
               style={{ objectFit: "cover" }}
