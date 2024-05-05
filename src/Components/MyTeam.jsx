@@ -24,15 +24,15 @@ function Card({ emoji, hueA, hueB }) {
 
   return (
     <motion.div
-      className="card-container"
+      className="team-card-container"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
       layout="position"
     >
       <div className="splash" style={{ background }} />
-      <motion.div className="card" variants={cardVariants}>
-        <img src="" alt="Img" className="card-image"/>
+      <motion.div className="team-card" variants={cardVariants}>
+        <img src="" alt="Img" className="team-card-image" />
       </motion.div>
     </motion.div>
   );
@@ -56,7 +56,7 @@ const MyTeam = () => {
       }}
     >
       {food.map(([emoji, hueA, hueB]) => (
-        <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
+        <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
           <Card emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />
         </Grid>
       ))}
