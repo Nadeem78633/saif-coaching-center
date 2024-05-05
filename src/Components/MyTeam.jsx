@@ -1,5 +1,6 @@
 import "../assets/Css/myTeam.css";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
+import { Grid } from "@mui/material";
 
 const cardVariants = {
   offscreen: {
@@ -27,6 +28,7 @@ function Card({ emoji, hueA, hueB }) {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
+      layout="position"
     >
       <div className="splash" style={{ background }} />
       <motion.div className="card" variants={cardVariants}>
@@ -40,16 +42,23 @@ const food = [
   ["🍅", 340, 10],
   ["🍊", 20, 40],
   ["🍋", 60, 90],
-  ["🍐", 80, 120],
-  ["🍏", 100, 140],
-  ["🫐", 205, 245],
-  ["🍆", 260, 290],
-  ["🍇", 290, 320],
 ];
 
 const MyTeam = () => {
-  return food.map(([emoji, hueA, hueB]) => (
-    <Card emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />
-  ));
+  return (
+    <Grid
+      container
+      spacing={2}
+      style={{
+        marginBottom: "60px",
+      }}
+    >
+      {food.map(([emoji, hueA, hueB]) => (
+        <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
+          <Card emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />
+        </Grid>
+      ))}
+    </Grid>
+  );
 };
 export default MyTeam;

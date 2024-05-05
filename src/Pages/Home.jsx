@@ -32,10 +32,10 @@ const Home = () => {
         </Grid>
         <div className="container">
           <WhatDoITeach />
-          <ContactMe />
         </div>
-        <MyTeam />
       </Grid>
+      <MyTeam/>
+      <ContactMe />
     </div>
   );
 };
