@@ -2,7 +2,29 @@
   margin-top: 40px;
   padding: 20px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+}
+.book-card {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: var(--shadow);
+  border-radius: 0px;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.book-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--gray-color);
 }
 .dont-miss {
   display: flex;
@@ -18,24 +40,26 @@
   font-family: "Lato", sans-serif;
   font-weight: 700;
 }
-.container {
+.book-container {
   padding-left: 20px;
   padding-right: 20px;
- 
+  display: flex;
+  justify-content: center;
 }
 .book-class {
-  padding: 5px;
   background-color: var(--primary);
-  color: white;
+  color: var(--button-text);
   padding: 16px;
   font-size: 20px;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins";
   text-decoration: none;
   font-weight: 700;
+  box-shadow: var(--shadow);
 }
+
 .book-class:hover {
   background-color: var(--button-hover);
-  color: var(--primary);
+  color: var(--shadow-text);
 }
 @media screen and (max-width: 600px) {
   .saif-coaching-center {
