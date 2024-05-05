@@ -32,7 +32,7 @@ function Card({ emoji, hueA, hueB }) {
     >
       <div className="splash" style={{ background }} />
       <motion.div className="card" variants={cardVariants}>
-        {emoji}
+        <img src="" alt="Img" className="card-image"/>
       </motion.div>
     </motion.div>
   );
@@ -51,6 +51,8 @@ const MyTeam = () => {
       spacing={2}
       style={{
         marginBottom: "60px",
+        paddingLeft: "20px",
+        paddingRight: "20px",
       }}
     >
       {food.map(([emoji, hueA, hueB]) => (
