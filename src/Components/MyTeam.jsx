@@ -1,9 +1,9 @@
 import "../assets/Css/myTeam.css";
 import { motion } from "framer-motion";
 import { Grid } from "@mui/material";
-import teacher1 from "../assets/img/Teacher/teacher1.jpg";
-import teacher2 from "../assets/img/Teacher/teacher2.jpg";
-import teacher3 from "../assets/img/Teacher/teacher3.jpg";
+import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
+import teacher2 from "../assets/img/Teacher/teacher2.jpeg";
+import teacher3 from "../assets/img/Teacher/teacher3.jpeg";
 
 const cardVariants = {
   offscreen: {
@@ -30,12 +30,9 @@ function Cards({ teacher }) {
       layout="position"
     >
       <motion.div className="team-card" variants={cardVariants}>
-        <img
-          src={teacher.img}
-          alt="Img"
-          className="team-card-image"
-          loading="lazy"
-        />
+        <div style={{ margin:'20px'}}>
+          <img src={teacher.img} alt="Img" className="team-card-image" />
+        </div>
       </motion.div>
     </motion.div>
   );
@@ -51,7 +48,7 @@ const MyTeam = () => {
   return (
     <Grid
       container
-      spacing={2}
+      spacing={10}
       style={{
         marginBottom: "60px",
         paddingLeft: "20px",
@@ -59,7 +56,7 @@ const MyTeam = () => {
       }}
     >
       {teachers.map((teacher) => (
-        <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
+        <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
           <Cards teacher={teacher} />
         </Grid>
       ))}
