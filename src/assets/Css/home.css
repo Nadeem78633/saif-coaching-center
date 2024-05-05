@@ -21,6 +21,6 @@
 
   .background-color {
     background-color: var(--secondary);
-    height: 70vh; /* Decreased height for small screens */
+    height: 50vh; /* Decreased height for small screens */
   }
 }
