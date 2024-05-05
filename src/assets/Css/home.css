@@ -17,5 +17,5 @@
 
 .background-color {
   background-color: var(--secondary);
-  height: 100vh;
+  height: 100%;
 }
