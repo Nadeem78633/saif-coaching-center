@@ -5,6 +5,7 @@ import {
   OurTopPerformer,
   WhatDoITeach,
   ContactMe,
+  MyTeam,
 } from "../Components";
 import { Grid } from "@mui/material";
 
@@ -33,6 +34,7 @@ const Home = () => {
           <WhatDoITeach />
           <ContactMe />
         </div>
+        <MyTeam />
       </Grid>
     </div>
   );

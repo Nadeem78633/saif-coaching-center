@@ -4,6 +4,7 @@ export {default as BookALesson} from './BookALesson'
 export { default as OurTopPerformer } from './OurTopPerformer'
 export { default as WhatDoITeach } from './WhatDoITeach.jsx'
 export { default as ContactMe } from './ContactMe.jsx'
+export {default as MyTeam} from './MyTeam.jsx'
 
 
 
