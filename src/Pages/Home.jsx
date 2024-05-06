@@ -1,6 +1,6 @@
 import "../assets/Css/home.css";
 import {
-  Image,
+  Subjects,
   BookALesson,
   OurTopPerformer,
   WhatDoITeach,
@@ -13,6 +13,7 @@ import { Grid } from "@mui/material";
 const Home = () => {
   return (
     <div className="home">
+      <SaifCoaching />
       <Grid container>
         <Grid
           item
@@ -22,11 +23,9 @@ const Home = () => {
           lg={6}
           xl={6}
           className="background-color"
-        >
-          <SaifCoaching />
-        </Grid>
+        ></Grid>
         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-          <Image />
+          <Subjects />
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <OurTopPerformer />
