@@ -51,10 +51,11 @@
   color: var(--button-text);
   padding: 16px;
   font-size: 20px;
-  font-family: "Poppins";
+  font-family: "Lato";
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
   box-shadow: var(--shadow);
+  border-radius: 30px;
 }
 
 .book-class:hover {

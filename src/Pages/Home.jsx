@@ -6,6 +6,7 @@ import {
   WhatDoITeach,
   ContactMe,
   MyTeam,
+  SaifCoaching,
 } from "../Components";
 import { Grid } from "@mui/material";
 
@@ -22,7 +23,7 @@ const Home = () => {
           xl={6}
           className="background-color"
         >
-          <BookALesson />
+          <SaifCoaching />
         </Grid>
         <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
           <Image />
@@ -34,7 +35,7 @@ const Home = () => {
           <WhatDoITeach />
         </div>
       </Grid>
-      <MyTeam/>
+      <MyTeam />
       <ContactMe />
     </div>
   );
