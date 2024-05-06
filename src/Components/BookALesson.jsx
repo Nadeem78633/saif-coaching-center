@@ -3,6 +3,7 @@ import "../assets/Css/bookALesson.css";
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import owner from '../assets/img/Teacher/owner.jpeg'
+
 const BookALesson = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const BookALesson = () => {
           <div className="img-container">
             <CardMedia
               component="img"
-              height="180"
+              height="200"
               image={owner}
               alt="green iguana"
               style={{ objectFit: "cover" }}

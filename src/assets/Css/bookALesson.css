@@ -17,14 +17,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px;
 }
 .book-info {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: var(--gray-color);
+  background: var(--primary);
+  color: white;
 }
 .dont-miss {
   display: flex;
@@ -47,7 +47,7 @@
   justify-content: center;
 }
 .book-class {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: var(--button-text);
   padding: 16px;
   font-size: 20px;
@@ -58,7 +58,7 @@
 }
 
 .book-class:hover {
-  background-color: var(--button-hover);
+  background-color: var(--primary);
   color: var(--shadow-text);
 }
 @media screen and (max-width: 600px) {
@@ -67,5 +67,11 @@
   }
   .book-a-lesson {
     margin-top: 0px;
+  }
+  .book-class {
+    padding: 15px;
+    font-size: 16px;
+
+    font-weight: 600;
   }
 }
