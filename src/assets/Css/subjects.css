@@ -1,11 +1,19 @@
 .physics {
   background-color: var(--yellow);
   height: 200px;
-  border-radius: var(--card-radius);
+
   box-shadow: var(--shadow);
+  margin-bottom: 20px;
 }
-.subject-name{
-    color:#696969;
-    font-weight: 600;
-   font-family: "Poppins";
+.subject-name {
+  color: #696969;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.math {
+  background-color: var(--light-green);
+  height: 150px;
+
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
 }

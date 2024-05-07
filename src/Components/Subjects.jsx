@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import physics from "../assets/img/subjects/physics.png";
+import math from '../assets/img/subjects/math.svg'
 import "../assets/Css/subjects.css";
 
 const Subjects = () => {
@@ -39,7 +40,17 @@ const Subjects = () => {
                 </CardContent>
               </Card>
 
-              <Card style={{ height: "200px" }}>2</Card>
+              <Card className="math" >
+                <CardContent>
+                  <CardMedia
+                    component="img"
+                    sx={{ height: 100, objectFit: "contain" }}
+                    image={math}
+                    alt="dssd"
+                  />
+                  <Typography className="subject-name">Math</Typography>
+                </CardContent>
+              </Card>
             </Grid>
             <Grid item sm={6} xs={6}>
               <Card style={{ height: "200px" }}>3</Card>
