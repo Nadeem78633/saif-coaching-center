@@ -5,27 +5,35 @@ import {
   useMediaQuery,
   Typography,
   CardContent,
+  Avatar,
+
 } from "@mui/material";
 import React from "react";
-import physics from "../assets/img/subjects/physics.png";
-import physics1 from '../assets/img/subjects/physics-1.svg'
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import physics1 from "../assets/img/subjects/physics-1.svg";
 import math from "../assets/img/subjects/math.svg";
 import chemistry from "../assets/img/subjects/chemistry.svg";
+import english from "../assets/img/subjects/english.png";
 import "../assets/Css/subjects.css";
 
 const Subjects = () => {
   const isSmallScreen = useMediaQuery("(max-width:768px)");
+
   const subjects = [
-    { id: 1, name: "Physics" },
-    { id: 2, name: "Chemsitery" },
-    { id: 3, name: "Math" },
-    { id: 4, name: "English" },
+    { id: 1, name: "Physics", img: physics1, bg_color: "#8cf2dd" },
+    { id: 2, name: "Chemsitery", img: chemistry, bg_color: "#ffec90" },
+    { id: 3, name: "Math", img: math, bg_color: "#74e6ff" },
+    { id: 4, name: "English", img: english, bg_color: "#fb8972" },
   ];
 
   return (
     <div
       style={{ paddingLeft: "20px", paddingRight: "20px", marginTop: "30px" }}
     >
+      <Typography variant="h6" className="teach">
+        <Avatar className="menu-book"><MenuBookIcon sytle={{color:'white'}} /></Avatar>
+        <span>What Subjects Do We Teach?</span>
+      </Typography>
       <Grid container spacing={2}>
         {isSmallScreen ? (
           <>
@@ -71,7 +79,7 @@ const Subjects = () => {
                   <CardMedia
                     component="img"
                     sx={{ height: 140, objectFit: "contain" }}
-                    image={physics}
+                    image={english}
                     alt="dssd"
                   />
                   <Typography className="subject-name">English</Typography>
@@ -80,20 +88,30 @@ const Subjects = () => {
             </Grid>
           </>
         ) : (
-          subjects.map((subject, index) => {
-            return (
-              <Grid item key={subject.id} sm={6} md={3} lg={3} xl={3}>
-                <Card style={{ width: "100%" }}>
-                  <CardMedia
-                    component="img"
-                    height="140"
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    alt="green iguana"
-                  />
-                </Card>
-              </Grid>
-            );
-          })
+          <>
+            {subjects.map((subject, index) => {
+              return (
+                <Grid item key={subject.id} sm={6} md={3} lg={3} xl={3}>
+                  <Card
+                    style={{ width: "100%", background: subject.bg_color }}
+                    className="xl-card"
+                  >
+                    <CardContent>
+                      <CardMedia
+                        component="img"
+                        sx={{ height: 100, objectFit: "contain" }}
+                        image={subject.img}
+                        alt="dssd"
+                      />
+                      <Typography className="subject-name">
+                        {subject.name}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              );
+            })}
+          </>
         )}
       </Grid>
     </div>

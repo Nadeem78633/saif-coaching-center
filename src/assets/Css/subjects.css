@@ -6,7 +6,7 @@
   margin-bottom: 20px;
 }
 .subject-name {
-  color: #696969;
+  color: var(--gray-text);
   font-weight: 600;
   font-family: "Poppins";
 }
@@ -31,4 +31,30 @@
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
+}
+.xl-card {
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+}
+.teach span {
+  font-weight: 700;
+
+  color: var(--gray-text);
+  font-family: "Poppins";
+  padding: 5px;
+}
+.teach {
+  margin-bottom: 20px;
+  display: flex;
+}
+.menu-book {
+  background-color: var(--orange);
+  box-shadow: var(--card-shadow);
+}
+@media screen and (max-width: 600px) {
+.teach span {
+  font-weight: 600;
+
+  font-size: 18px;
+}
 }
