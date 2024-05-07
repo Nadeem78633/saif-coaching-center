@@ -1,69 +1,113 @@
+import {
+  CardMedia,
+  Grid,
+  Card,
+  useMediaQuery,
+  Typography,
+  CardContent,
+  Avatar,
+} from "@mui/material";
+import React from "react";
+import GroupIcon from "@mui/icons-material/Group";
+import physics1 from "../assets/img/subjects/physics-1.svg";
+import math from "../assets/img/subjects/math.svg";
+import chemistry from "../assets/img/subjects/chemistry.svg";
+import english from "../assets/img/subjects/english.png";
+import owner from '../assets/img/Teacher/owner.jpeg'
+import teacher1 from '../assets/img/Teacher/teacher1.jpeg'
+import teacher2 from '../assets/img/Teacher/teacher2.jpeg'
 import "../assets/Css/myTeam.css";
-import { motion } from "framer-motion";
-import { Grid, Typography } from "@mui/material";
-import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
-import teacher2 from "../assets/img/Teacher/teacher2.jpeg";
-import teacher3 from "../assets/img/Teacher/teacher3.jpeg";
 
-const cardVariants = {
-  offscreen: {
-    y: 400,
-  },
-  onscreen: {
-    y: 50,
-    rotate: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 0.8,
-    },
-  },
-};
+const Subjects = () => {
+  const isSmallScreen = useMediaQuery("(max-width:768px)");
 
-function Cards({ teacher }) {
+  const subjects = [
+    { name: "Owner", img: owner, bg_color: "#8cf2dd" },
+    { name: "Teacher 1", img: teacher1, bg_color: "#ffec90" },
+    { name: "Teacher 2", img: teacher2, bg_color: "#74e6ff" },
+  ];
+
   return (
-    <motion.div
-      className="team-card-container"
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
-      layout="position"
+    <div
+      style={{ paddingLeft: "20px", paddingRight: "20px", marginTop: "30px" }}
     >
-      <motion.div className="team-card" variants={cardVariants}>
-        <div style={{ padding: "20px", width: "100%" }}>
-          <img src={teacher.img} alt="Img" className="team-card-image" />
-        </div>
-      </motion.div>
-    </motion.div>
-  );
-}
-
-const teachers = [
-  { id: 1, img: teacher1 },
-  { id: 2, img: teacher2 },
-  { id: 3, img: teacher3 },
-];
-
-const MyTeam = () => {
-  return (
-    <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
-      <Typography variant="h2" className="my-team" gutterBottom={false}>
-        My Team
+      <Typography variant="h6" className="my-team">
+        <Avatar className="group">
+          <GroupIcon sytle={{ color: "white" }} />
+        </Avatar>
+        <span>My Team?</span>
       </Typography>
-      <Grid
-        container
-        spacing={4}
-        style={{
-          marginBottom: "60px",
-        }}
-      >
-        {teachers.map((teacher) => (
-          <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
-            <Cards teacher={teacher} />
-          </Grid>
-        ))}
+      <Grid container spacing={2}>
+        {isSmallScreen ? (
+          <>
+            <Grid item sm={6} xs={6}>
+              <Card className="person1">
+                <CardContent>
+                  <CardMedia
+                    
+                    component="img"
+                    sx={{ height: 140, objectFit: "contain",borderRadius:'20px' }}
+                    image={owner}
+                    alt="owner"
+                  />
+                  <Typography className="team-name">Owner</Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item sm={6} xs={6}>
+              <Card className="person2">
+                <CardContent>
+                  <CardMedia
+                    component="img"
+                    sx={{ height: 100, objectFit: "contain" }}
+                    image={teacher1}
+                    alt="teacher1"
+                  />
+                  <Typography className="team-name">Teacher 1</Typography>
+                </CardContent>
+              </Card>
+              <Card className="person3">
+                <CardContent>
+                  <CardMedia
+                    component="img"
+                    sx={{ height: 100, objectFit: "contain" }}
+                    image={teacher2}
+                    alt="teacher2"
+                  />
+                  <Typography className="team-name">Teacher 2</Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </>
+        ) : (
+          <>
+            {subjects.map((subject, index) => {
+              return (
+                <Grid item key={subject.id} sm={6} md={4} lg={4} xl={4}>
+                  <Card
+                    style={{ width: "100%", background: subject.bg_color }}
+                    className="my-team-xl-card"
+                  >
+                    <CardContent>
+                      <CardMedia
+                        component="img"
+                        sx={{ height: 100, objectFit: "contain" }}
+                        image={subject.img}
+                        alt="dssd"
+                      />
+                      <Typography className="team-name">
+                        {subject.name}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              );
+            })}
+          </>
+        )}
       </Grid>
     </div>
   );
 };
-export default MyTeam;
+
+export default Subjects;
