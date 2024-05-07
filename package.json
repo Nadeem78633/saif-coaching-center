@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.1.7",
+    "lightgallery": "^2.7.2",
     "popmotion": "^11.0.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
