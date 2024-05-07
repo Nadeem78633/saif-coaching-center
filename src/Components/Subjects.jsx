@@ -8,10 +8,9 @@ import {
 } from "@mui/material";
 import React from "react";
 import physics from "../assets/img/subjects/physics.png";
-import physics1 from "../assets/img/subjects/physics-1.svg";
+import physics1 from '../assets/img/subjects/physics-1.svg'
 import math from "../assets/img/subjects/math.svg";
 import chemistry from "../assets/img/subjects/chemistry.svg";
-import english from "../assets/img/subjects/eng.png";
 import "../assets/Css/subjects.css";
 
 const Subjects = () => {
@@ -72,7 +71,7 @@ const Subjects = () => {
                   <CardMedia
                     component="img"
                     sx={{ height: 140, objectFit: "contain" }}
-                    image={english}
+                    image={physics}
                     alt="dssd"
                   />
                   <Typography className="subject-name">English</Typography>
