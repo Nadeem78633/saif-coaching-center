@@ -9,13 +9,14 @@ import {
 } from "@mui/material";
 import React from "react";
 import GroupIcon from "@mui/icons-material/Group";
+
 import physics1 from "../assets/img/subjects/physics-1.svg";
 import math from "../assets/img/subjects/math.svg";
 import chemistry from "../assets/img/subjects/chemistry.svg";
 import english from "../assets/img/subjects/english.png";
-import owner from '../assets/img/Teacher/owner.jpeg'
-import teacher1 from '../assets/img/Teacher/teacher1.jpeg'
-import teacher2 from '../assets/img/Teacher/teacher2.jpeg'
+import owner from "../assets/img/Teacher/owner.jpeg";
+import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
+import teacher2 from "../assets/img/Teacher/teacher2.jpeg";
 import "../assets/Css/myTeam.css";
 
 const Subjects = () => {
@@ -44,9 +45,12 @@ const Subjects = () => {
               <Card className="person1">
                 <CardContent>
                   <CardMedia
-                    
                     component="img"
-                    sx={{ height: 140, objectFit: "contain",borderRadius:'20px' }}
+                    sx={{
+                      height: 140,
+
+                      objectFit: "contain",
+                    }}
                     image={owner}
                     alt="owner"
                   />
@@ -84,17 +88,14 @@ const Subjects = () => {
             {subjects.map((subject, index) => {
               return (
                 <Grid item key={subject.id} sm={6} md={4} lg={4} xl={4}>
-                  <Card
-                    style={{ width: "100%", background: subject.bg_color }}
-                    className="my-team-xl-card"
-                  >
+                  <Card style={{ width: "100%" }} className="my-team-xl-card">
+                    <CardMedia
+                      component="img"
+                      sx={{ height: 100, objectFit: "contain" }}
+                      image={subject.img}
+                      alt="dssd"
+                    />
                     <CardContent>
-                      <CardMedia
-                        component="img"
-                        sx={{ height: 100, objectFit: "contain" }}
-                        image={subject.img}
-                        alt="dssd"
-                      />
                       <Typography className="team-name">
                         {subject.name}
                       </Typography>

@@ -1,7 +1,6 @@
 .person1 {
-  background-color: var(--light-green);
   height: 340px;
-  border-radius: var(--card-radius);
+  
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
@@ -11,20 +10,17 @@
   font-family: "Poppins";
 }
 .person2 {
-  background-color: var(--sky-blue);
   height: 160px;
-  border-radius: var(--card-radius);
+  
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .person3 {
-  background-color: var(--yellow);
   height: 160px;
-  border-radius: var(--card-radius);
+ 
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
-
 
 .my-team-xl-card {
   border-radius: var(--card-radius);
@@ -45,13 +41,13 @@
   background-color: var(--orange);
   box-shadow: var(--card-shadow);
 }
-.team-content{
+.team-content {
   border-radius: 20px;
 }
 @media screen and (max-width: 600px) {
-.my-team span {
-  font-weight: 600;
+  .my-team span {
+    font-weight: 600;
 
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 }
