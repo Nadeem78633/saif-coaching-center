@@ -17,7 +17,7 @@
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
-.chemistery {
+.chemistry {
   background-color: var(--yellow);
   height: 150px;
   border-radius: var(--card-radius);

@@ -8,7 +8,10 @@ import {
 } from "@mui/material";
 import React from "react";
 import physics from "../assets/img/subjects/physics.png";
+import physics1 from "../assets/img/subjects/physics-1.svg";
 import math from "../assets/img/subjects/math.svg";
+import chemistry from "../assets/img/subjects/chemistry.svg";
+import english from "../assets/img/subjects/eng.png";
 import "../assets/Css/subjects.css";
 
 const Subjects = () => {
@@ -33,7 +36,7 @@ const Subjects = () => {
                   <CardMedia
                     component="img"
                     sx={{ height: 140, objectFit: "contain" }}
-                    image={physics}
+                    image={physics1}
                     alt="dssd"
                   />
                   <Typography className="subject-name">Physics</Typography>
@@ -53,15 +56,15 @@ const Subjects = () => {
               </Card>
             </Grid>
             <Grid item sm={6} xs={6}>
-              <Card className="chemistery">
+              <Card className="chemistry">
                 <CardContent>
                   <CardMedia
                     component="img"
                     sx={{ height: 100, objectFit: "contain" }}
-                    image={math}
+                    image={chemistry}
                     alt="dssd"
                   />
-                  <Typography className="subject-name">Chemsitery</Typography>
+                  <Typography className="subject-name">Chemsitry</Typography>
                 </CardContent>
               </Card>
               <Card className="english">
@@ -69,7 +72,7 @@ const Subjects = () => {
                   <CardMedia
                     component="img"
                     sx={{ height: 140, objectFit: "contain" }}
-                    image={physics}
+                    image={english}
                     alt="dssd"
                   />
                   <Typography className="subject-name">English</Typography>
