@@ -37,8 +37,8 @@
   display: flex;
 }
 .group {
-  background-color: var(--orange);
-  box-shadow: var(--card-shadow);
+  background-color: #192a88;
+  box-shadow: var(--shadow);
 }
 .team-content {
   border-radius: 20px;

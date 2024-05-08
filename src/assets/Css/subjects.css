@@ -1,5 +1,5 @@
 .physics {
-  background-color: #dcdef7;
+
   height: 200px;
   border-radius: 0px;
   box-shadow: var(--card-shadow);
@@ -11,14 +11,14 @@
   font-family: "Poppins";
 }
 .math {
-  background-color: #ebedfc;
+
   height: 150px;
   border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .chemistry {
-  background-color: #fff1e0;
+ 
   height: 150px;
   border-radius: 0px;
   box-shadow: var(--card-shadow);
@@ -26,7 +26,7 @@
 }
 
 .english {
-  background-color: #ffe0d6;
+ 
   height: 200px;
   border-radius: 0px;
   box-shadow: var(--card-shadow);
