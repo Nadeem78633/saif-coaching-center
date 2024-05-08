@@ -1,6 +1,6 @@
 .person1 {
   height: 340px;
-  
+
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
@@ -11,19 +11,18 @@
 }
 .person2 {
   height: 160px;
-  
+
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .person3 {
   height: 160px;
- 
+
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 
 .my-team-xl-card {
-  border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
 }
 .my-team span {

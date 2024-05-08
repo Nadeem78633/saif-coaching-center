@@ -3,19 +3,29 @@ import "../assets/Css/slider.css";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { Card, CardMedia, Button } from "@mui/material";
+import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
+import teacher2 from "../assets/img/Teacher/teacher2.jpeg";
+import teacher3 from "../assets/img/Teacher/teacher3.jpeg";
+import owner from "../assets/img/Teacher/owner.jpeg";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      image:
-        "https://e1.pxfuel.com/desktop-wallpaper/604/743/desktop-wallpaper-best-cards-to-pull-from-pokemon-tcg-fusion-strike-vmax-gengar.jpg",
-      caption: "Gengar",
+      image: owner,
+      name: "Owner",
     },
     {
-      image:
-        "https://e0.pxfuel.com/wallpapers/244/435/desktop-wallpaper-pokemon-pokemon-lugia-pokemon-poster-pokemon-realistic-cool-lugia.jpg",
-      caption: "Lugia",
+      image: teacher1,
+      name: "Teacher1",
+    },
+    {
+      image: teacher2,
+      name: "Teacher2",
+    },
+    {
+      image: teacher3,
+      name: "Teacher3",
     },
   ];
 
@@ -74,7 +84,7 @@ const Slider = () => {
             <div className="card-sections">
               <div className="upper-section"></div>
               <div className="lower-section">
-                <div className="card-caption">{slide.caption}</div>
+                <div className="card-caption">{slide.name}</div>
                 <div className="card-button">know more</div>
               </div>
             </div>

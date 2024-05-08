@@ -56,8 +56,8 @@
   position: absolute;
   height: 24rem;
   max-height: 400px;
-  width: 14rem;
-  min-width: 270px;
+  width: 10rem;
+  min-width: 180px;
   background: white;
 
   left: 50%;

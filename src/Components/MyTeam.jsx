@@ -43,41 +43,41 @@ const Subjects = () => {
           <>
             <Grid item sm={6} xs={6}>
               <Card className="person1">
-                <CardContent>
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      height: 140,
+                <CardMedia
+                  component="img"
+                  sx={{
+                    height: 115,
 
-                      objectFit: "contain",
-                    }}
-                    image={owner}
-                    alt="owner"
-                  />
+                    objectFit: "contain",
+                  }}
+                  image={owner}
+                  alt="owner"
+                />
+                <CardContent>
                   <Typography className="team-name">Owner</Typography>
                 </CardContent>
               </Card>
             </Grid>
             <Grid item sm={6} xs={6}>
               <Card className="person2">
+                <CardMedia
+                  component="img"
+                  sx={{ height: 115, objectFit: "contain" }}
+                  image={teacher1}
+                  alt="teacher1"
+                />
                 <CardContent>
-                  <CardMedia
-                    component="img"
-                    sx={{ height: 100, objectFit: "contain" }}
-                    image={teacher1}
-                    alt="teacher1"
-                  />
                   <Typography className="team-name">Teacher 1</Typography>
                 </CardContent>
               </Card>
               <Card className="person3">
+                <CardMedia
+                  component="img"
+                  sx={{ height: 115, objectFit: "contain" }}
+                  image={teacher2}
+                  alt="teacher2"
+                />
                 <CardContent>
-                  <CardMedia
-                    component="img"
-                    sx={{ height: 100, objectFit: "contain" }}
-                    image={teacher2}
-                    alt="teacher2"
-                  />
                   <Typography className="team-name">Teacher 2</Typography>
                 </CardContent>
               </Card>
@@ -88,18 +88,27 @@ const Subjects = () => {
             {subjects.map((subject, index) => {
               return (
                 <Grid item key={subject.id} sm={6} md={4} lg={4} xl={4}>
-                  <Card style={{ width: "100%" }} className="my-team-xl-card">
-                    <CardMedia
-                      component="img"
-                      sx={{ height: 100, objectFit: "contain" }}
-                      image={subject.img}
-                      alt="dssd"
-                    />
-                    <CardContent>
-                      <Typography className="team-name">
-                        {subject.name}
-                      </Typography>
-                    </CardContent>
+                  <Card
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
+                    className="my-team-xl-card"
+                  >
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <CardMedia
+                        component="img"
+                        sx={{ height: 100, objectFit: "contain" }}
+                        image={subject.img}
+                        alt="dssd"
+                      />
+                      <CardContent>
+                        <Typography className="team-name">
+                          {subject.name}
+                        </Typography>
+                      </CardContent>
+                    </div>
                   </Card>
                 </Grid>
               );
