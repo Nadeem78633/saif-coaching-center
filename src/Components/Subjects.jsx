@@ -20,10 +20,10 @@ const Subjects = () => {
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
   const subjects = [
-    { id: 1, name: "Physics", img: physics1, bg_color: "#8cf2dd" },
-    { id: 2, name: "Chemsitery", img: chemistry, bg_color: "#ffec90" },
-    { id: 3, name: "Math", img: math, bg_color: "#74e6ff" },
-    { id: 4, name: "English", img: english, bg_color: "#fb8972" },
+    { id: 1, name: "Physics", img: physics1, bg_color: "#dcdef7" },
+    { id: 2, name: "Chemsitery", img: chemistry, bg_color: "#fff1e0" },
+    { id: 3, name: "Math", img: math, bg_color: "#ebedfc" },
+    { id: 4, name: "English", img: english, bg_color: "#ffe0d6" },
   ];
 
   return (

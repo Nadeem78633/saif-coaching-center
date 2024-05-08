@@ -1,7 +1,7 @@
 .physics {
-  background-color: var(--light-green);
+  background-color: #dcdef7;
   height: 200px;
-  border-radius: var(--card-radius);
+  border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
@@ -11,29 +11,29 @@
   font-family: "Poppins";
 }
 .math {
-  background-color: var(--sky-blue);
+  background-color: #ebedfc;
   height: 150px;
-  border-radius: var(--card-radius);
+  border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .chemistry {
-  background-color: var(--yellow);
+  background-color: #fff1e0;
   height: 150px;
-  border-radius: var(--card-radius);
+  border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 
 .english {
-  background-color: var(--light-red);
+  background-color: #ffe0d6;
   height: 200px;
-  border-radius: var(--card-radius);
+  border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .xl-card {
-  border-radius: var(--card-radius);
+  border-radius: 0px;
   box-shadow: var(--card-shadow);
 }
 .teach span {
