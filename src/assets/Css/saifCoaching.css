@@ -6,8 +6,8 @@
   justify-content: space-between;
 }
 .saif-coaching {
-  color: var(--button-text);
-  background-color: var(--orange);
+  color: white;
+  background-color: #192a88;
   border-radius: var(--border-radius);
   display: flex;
   justify-content: space-around;

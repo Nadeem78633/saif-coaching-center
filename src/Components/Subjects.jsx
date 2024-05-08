@@ -32,7 +32,7 @@ const Subjects = () => {
     >
       <Typography variant="h6" className="teach">
         <Avatar className="menu-book"><MenuBookIcon sytle={{color:'white'}} /></Avatar>
-        <span>What Subjects Do We Teach?</span>
+        <span>What  Do I Teach?</span>
       </Typography>
       <Grid container spacing={2}>
         {isSmallScreen ? (

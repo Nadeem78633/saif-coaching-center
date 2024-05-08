@@ -6,7 +6,7 @@
   margin-bottom: 20px;
 }
 .subject-name {
-  color: var(--gray-text);
+  color: black;
   font-weight: 600;
   font-family: "Poppins";
 }
@@ -37,10 +37,9 @@
   box-shadow: var(--card-shadow);
 }
 .teach span {
-  font-weight: 700;
-
-  color: var(--gray-text);
-  font-family: "Poppins";
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   padding: 5px;
 }
 .teach {
@@ -48,13 +47,13 @@
   display: flex;
 }
 .menu-book {
-  background-color: var(--orange);
-  box-shadow: var(--card-shadow);
+  background-color: #192a88;
+  box-shadow: var(--shadow);
 }
 @media screen and (max-width: 600px) {
-.teach span {
-  font-weight: 600;
+  .teach span {
+    font-weight: 600;
 
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 }
