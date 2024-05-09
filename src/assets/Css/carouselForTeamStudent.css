@@ -12,7 +12,7 @@
 }
 .team-cards {
   box-shadow: var(--shadow);
-  height: 150px;
+  height: 200px;
   display: flex;
   justify-content: space-between;
   border-radius: 0px;

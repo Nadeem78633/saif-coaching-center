@@ -13,7 +13,7 @@ import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
 const Cards = ({ index }) => (
   <>
     <Card className="team-cards">
-      <div style={{ width: "50%" }}>
+      <div style={{ width: "100%" }}>
         <CardMedia
           component="img"
           sx={{
@@ -24,11 +24,7 @@ const Cards = ({ index }) => (
           style={{ order: -1 }} // Move CardMedia to the start
         />
       </div>
-      <CardContent className="team-content" style={{ width: "50%" }}>
-        <Typography variant="subtitle1" className="team-name">Name : Suhel</Typography>
-        <Typography className="team-name">Marks : 75</Typography>
-        <Typography className="team-name">Subject : Chemistry</Typography>
-      </CardContent>
+    
     </Card>
   </>
 );
