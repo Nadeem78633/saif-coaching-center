@@ -20,17 +20,20 @@ const Cards = ({ index }) => (
             bottom: 0,
             left: 0,
             width: "100%",
-            height: "30px",
-            backgroundColor: "rgba(255, 255, 255, .7)",
+            height: "35px",
+            backgroundColor: "rgba(25, 42, 136, .8)",
             zIndex: 1,
           }}
         >
           <Typography
             variant="h6"
             style={{
+              fontSize: "20px",
               fontFamily: "Poppins",
-              fontWeight: 600,
+
+              fontWeight: "500",
               textAlign: "center",
+              color: "white",
             }}
           >
             Name
