@@ -1,7 +1,7 @@
 import "../assets/Css/home.css";
 import {
   Subjects,
-  BookALesson,
+  CarouselForTeamStudent,
   OurTopPerformer,
   WhatDoITeach,
   ContactMe,
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className="home">
       <SaifCoaching />
-
+      <CarouselForTeamStudent />
       <Grid container>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <Subjects />
