@@ -5,7 +5,7 @@
   margin-bottom: 20px;
 }
 .team-name {
-  color: var(--gray-text);
+  color: var(--text-color);
   font-weight: 600;
   font-family: "Poppins";
 }
@@ -37,7 +37,7 @@
   display: flex;
 }
 .group {
-  background-color: #192a88;
+  background-color: var(--blue);
   box-shadow: var(--shadow);
 }
 .team-content {

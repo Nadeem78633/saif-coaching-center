@@ -1,24 +1,21 @@
 .physics {
-
   height: 200px;
   border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .subject-name {
-  color: black;
+  color: var(--text-color);
   font-weight: 600;
   font-family: "Poppins";
 }
 .math {
-
   height: 150px;
   border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .chemistry {
- 
   height: 150px;
   border-radius: 0px;
   box-shadow: var(--card-shadow);
@@ -26,7 +23,6 @@
 }
 
 .english {
- 
   height: 200px;
   border-radius: 0px;
   box-shadow: var(--card-shadow);
@@ -47,8 +43,29 @@
   display: flex;
 }
 .menu-book {
-  background-color: #192a88;
+  background-color: var(--blue);
   box-shadow: var(--shadow);
+}
+.english-avatar {
+  background-color: var(--blue);
+  padding: 20px;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+}
+.math-avatar{
+  background-color: var(--blue);
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.avatar-lg {
+  background-color: var(--blue);
+  padding: 20px;
+  width: 90px;
+  height: 90px;
+  margin: auto;
 }
 @media screen and (max-width: 600px) {
   .teach span {

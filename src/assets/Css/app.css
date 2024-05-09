@@ -3,18 +3,14 @@
   margin: 0px;
 }
 :root {
-  --background-color: #fefefe;
-  --orange: #ff7900;
-  --yellow: #ffec90;
-  --sky-blue:#74e6ff;
-  --light-green:#8cf2dd;
-  --light-red:#fb8972;
-  --button-text: black;
+  --blue: #192a88;
+  --green: #96e652;
+  --text-black: black;
+  --text-white:white;
   --shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   --border-radius: 30px;
-    --card-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  --card-radius:20px;
-  --gray-text:#696969;
+  --card-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  --card-radius: 20px;
 }
 body {
   /* background-color: var(--background-color); */

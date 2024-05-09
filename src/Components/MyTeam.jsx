@@ -10,10 +10,7 @@ import {
 import React from "react";
 import GroupIcon from "@mui/icons-material/Group";
 
-import physics1 from "../assets/img/subjects/physics-1.svg";
-import math from "../assets/img/subjects/math.svg";
-import chemistry from "../assets/img/subjects/chemistry.svg";
-import english from "../assets/img/subjects/english.png";
+
 import owner from "../assets/img/Teacher/owner.jpeg";
 import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
 import teacher2 from "../assets/img/Teacher/teacher2.jpeg";
