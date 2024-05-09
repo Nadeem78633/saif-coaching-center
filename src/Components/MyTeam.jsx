@@ -10,7 +10,6 @@ import {
 import React from "react";
 import GroupIcon from "@mui/icons-material/Group";
 
-
 import owner from "../assets/img/Teacher/owner.jpeg";
 import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
 import teacher2 from "../assets/img/Teacher/teacher2.jpeg";
@@ -33,50 +32,55 @@ const Subjects = () => {
         <Avatar className="group">
           <GroupIcon sytle={{ color: "white" }} />
         </Avatar>
-        <span>My Team?</span>
+        <span>My Team</span>
       </Typography>
       <Grid container spacing={2}>
         {isSmallScreen ? (
           <>
             <Grid item sm={6} xs={6}>
               <Card className="person1">
-                <CardMedia
-                  component="img"
-                  sx={{
-                    height: 115,
-
-                    objectFit: "contain",
-                  }}
-                  image={owner}
-                  alt="owner"
-                />
-                <CardContent>
-                  <Typography className="team-name">Owner</Typography>
-                </CardContent>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  <CardMedia
+                    component="img"
+                    sx={{
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
+                    image={owner}
+                    alt="owner"
+                  />
+                  <CardContent>
+                    <Typography className="team-name">Owner</Typography>
+                  </CardContent>
+                </div>
               </Card>
             </Grid>
             <Grid item sm={6} xs={6}>
               <Card className="person2">
-                <CardMedia
-                  component="img"
-                  sx={{ height: 115, objectFit: "contain" }}
-                  image={teacher1}
-                  alt="teacher1"
-                />
-                <CardContent>
-                  <Typography className="team-name">Teacher 1</Typography>
-                </CardContent>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  <CardMedia
+                    component="img"
+                    sx={{ height: "100%", objectFit: "contain" }}
+                    image={teacher1}
+                    alt="teacher1"
+                  />
+                  <CardContent>
+                    <Typography className="team-name">Teacher 1</Typography>
+                  </CardContent>
+                </div>
               </Card>
               <Card className="person3">
-                <CardMedia
-                  component="img"
-                  sx={{ height: 115, objectFit: "contain" }}
-                  image={teacher2}
-                  alt="teacher2"
-                />
-                <CardContent>
-                  <Typography className="team-name">Teacher 2</Typography>
-                </CardContent>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  <CardMedia
+                    component="img"
+                    sx={{ height: "100%", objectFit: "contain" }}
+                    image={teacher2}
+                    alt="teacher2"
+                  />
+                  <CardContent>
+                    <Typography className="team-name">Teacher 2</Typography>
+                  </CardContent>
+                </div>
               </Card>
             </Grid>
           </>
@@ -93,7 +97,7 @@ const Subjects = () => {
                     }}
                     className="my-team-xl-card"
                   >
-                    <div style={{ display: "flex", alignItems: "center" }}>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
                       <CardMedia
                         component="img"
                         sx={{ height: 100, objectFit: "contain" }}

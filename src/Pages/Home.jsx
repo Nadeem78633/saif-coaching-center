@@ -2,8 +2,6 @@ import "../assets/Css/home.css";
 import {
   Subjects,
   CarouselForTeamStudent,
-  OurTopPerformer,
-  WhatDoITeach,
   ContactMe,
   MyTeam,
   SaifCoaching,
@@ -20,12 +18,8 @@ const Home = () => {
           <Subjects />
           <MyTeam />
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-          <OurTopPerformer />
-        </Grid>
-        <div className="container">
-          <WhatDoITeach />
-        </div>
+
+        <div className="container">Top</div>
       </Grid>
 
       <ContactMe />

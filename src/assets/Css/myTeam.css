@@ -1,23 +1,24 @@
 .person1 {
   height: 340px;
-
+  border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .team-name {
   color: var(--text-color);
-  font-weight: 600;
+
   font-family: "Poppins";
 }
 .person2 {
   height: 160px;
 
+  border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
 .person3 {
   height: 160px;
-
+  border-radius: 0px;
   box-shadow: var(--card-shadow);
   margin-bottom: 20px;
 }
@@ -26,10 +27,9 @@
   box-shadow: var(--card-shadow);
 }
 .my-team span {
-  font-weight: 700;
-
-  color: var(--gray-text);
-  font-family: "Poppins";
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   padding: 5px;
 }
 .my-team {
@@ -47,6 +47,6 @@
   .my-team span {
     font-weight: 600;
 
-    font-size: 18px;
+    font-size: 20px;
   }
 }
