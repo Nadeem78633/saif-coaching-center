@@ -19,16 +19,18 @@ p {
 .card {
   width: 100%;
   background-color: #fff;
-  padding: 15px;
 
-  border-radius: 4px;
-  box-shadow: 0 3px 1px -2px rgb(0 0 0/20%), 0 2px 2px 0 rgb(0 0 0/14%),
-    0 1px 5px 0 rgb(0 0 0/12%);
+  display: flex;
+
+  box-shadow: var(--shadow)
+}
+.card-text {
+  width: 100%;
+  padding: 15px;
 }
 
 h3 {
   padding-left: 10px;
-
 }
 
 @media screen and (max-width: 800px) {

@@ -1,15 +1,17 @@
 import ReactCaroussel from "react-caroussel";
 import "react-caroussel/dist/index.css";
 import "../assets/Css/carouselForTeamStudent.css";
-import { useMediaQuery } from "@mui/material";
+import { Typography, useMediaQuery } from "@mui/material";
+import owner from "../assets/img/Teacher/owner.jpeg";
 
 const Card = ({ index }) => (
   <div className="card">
-    <h1>Card {index}</h1>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </p>
-    <button>Read more</button>
+    <div style={{ padding: "15px" }}>
+      <img src={owner} alt="owner" />
+    </div>
+    <div className="card-text">
+      <Typography>SFDFs</Typography>
+    </div>
   </div>
 );
 
@@ -23,7 +25,7 @@ const CarouselForTeamStudent = () => {
           <ReactCaroussel
             infinite={true}
             autoplay={true}
-            speed={3} // 0.5s
+            speed={3}
             display={{
               dots: true,
               arrows: false,
@@ -38,6 +40,8 @@ const CarouselForTeamStudent = () => {
             slidesToShow={3}
             slidesToScroll={1}
             infinite={true}
+            autoplay={true}
+            speed={3}
             style={{ color: "blue" }}
             display={{
               dots: true,
