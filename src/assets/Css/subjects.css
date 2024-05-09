@@ -9,6 +9,12 @@
   font-weight: 600;
   font-family: "Poppins";
 }
+.subject-name-english {
+  color: var(--text-color);
+  font-weight: 600;
+  font-family: "Poppins";
+  margin-top: 20px;
+}
 .math {
   height: 150px;
   border-radius: 0px;

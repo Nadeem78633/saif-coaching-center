@@ -52,27 +52,29 @@ const Subjects = () => {
               </Card>
 
               <Card className="math">
-                <CardContent
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    textAlign: "center",
-                  }}
-                >
-                  <Avatar className="math-avatar">
-                    <CardMedia
-                      component="img"
-                      sx={{
-                        height: 140,
-                        objectFit: "contain",
-                        marginTop: "10px",
-                      }}
-                      image={math}
-                      alt="dssd"
-                    />
-                  </Avatar>
+                <CardContent>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      textAlign: "center",
+                    }}
+                  >
+                    <Avatar className="math-avatar">
+                      <CardMedia
+                        component="img"
+                        sx={{
+                          height: 140,
+                          objectFit: "contain",
+                          marginTop: "10px",
+                        }}
+                        image={math}
+                        alt="dssd"
+                      />
+                    </Avatar>
+                  </div>
                   <Typography className="subject-name">Math</Typography>
                 </CardContent>
               </Card>
@@ -90,28 +92,32 @@ const Subjects = () => {
                 </CardContent>
               </Card>
               <Card className="english">
-                <CardContent
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    textAlign: "center",
-                  }}
-                >
-                  <Avatar className="english-avatar">
-                    <CardMedia
-                      component="img"
-                      sx={{
-                        height: 140,
-                        objectFit: "contain",
-                        marginTop: "20px",
-                      }}
-                      image={english}
-                      alt="dssd"
-                    />
-                  </Avatar>
-                  <Typography className="subject-name">English</Typography>
+                <CardContent>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      textAlign: "center",
+                    }}
+                  >
+                    <Avatar className="english-avatar">
+                      <CardMedia
+                        component="img"
+                        sx={{
+                          height: 140,
+                          objectFit: "contain",
+                          marginTop: "20px",
+                        }}
+                        image={english}
+                        alt="dssd"
+                      />
+                    </Avatar>
+                  </div>
+                  <Typography className="subject-name-english">
+                    English
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
