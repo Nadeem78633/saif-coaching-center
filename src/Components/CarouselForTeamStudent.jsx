@@ -13,7 +13,29 @@ import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
 const Cards = ({ index }) => (
   <>
     <Card className="team-cards">
-      <div style={{ width: "100%" }}>
+      <div style={{ position: "relative", width: "100%" }}>
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            width: "100%",
+            height: "30px",
+            backgroundColor: "rgba(255, 255, 255, .7)",
+            zIndex: 1,
+          }}
+        >
+          <Typography
+            variant="h6"
+            style={{
+              fontFamily: "Poppins",
+              fontWeight: 600,
+              textAlign: "center",
+            }}
+          >
+            Name
+          </Typography>
+        </div>
         <CardMedia
           component="img"
           sx={{
@@ -21,10 +43,9 @@ const Cards = ({ index }) => (
           }}
           image={teacher1}
           alt="owner"
-          style={{ order: -1 }} // Move CardMedia to the start
+          style={{ zIndex: 0 }} // Ensure the image appears behind the overlay
         />
       </div>
-    
     </Card>
   </>
 );
