@@ -11,9 +11,9 @@
 }
 .performer-cards {
   box-shadow: var(--shadow);
-  height: 220px;
-  display: flex;
-  justify-content: space-between;
+  height: 350px;
+  
+  
   border-radius: 0px;
 }
 .team-name {
@@ -21,6 +21,7 @@
   font-weight: 500;
  
 }
+
 
 .top-performer span {
   font-size: 20px;

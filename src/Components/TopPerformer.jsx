@@ -15,42 +15,28 @@ import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
 const Cards = ({ index }) => (
   <>
     <Card className="performer-cards">
-      <div style={{ position: "relative", width: "100%" }}>
-        <div
-          style={{
-            position: "absolute",
-            bottom: 0,
-            left: 0,
-            width: "100%",
-            height: "35px",
-            backgroundColor: "rgba(25, 42, 136, .8)",
-            zIndex: 1,
-          }}
-        >
-          <Typography
-            variant="h6"
-            style={{
-              fontSize: "20px",
-              fontFamily: "Poppins",
-
-              fontWeight: "500",
-              textAlign: "center",
-              color: "white",
-            }}
-          >
-            Name
-          </Typography>
+      <CardMedia
+        component="img"
+        sx={{
+          height: "200px",
+          objectFit: "fill",
+        }}
+        image={teacher1}
+        alt="owner"
+      />
+      <CardContent>
+        <div>
+          <Typography className="name">Name : Suhel</Typography>
         </div>
-        <CardMedia
-          component="img"
-          sx={{
-            height: "100%",
-          }}
-          image={teacher1}
-          alt="owner"
-          style={{ zIndex: 0 }}
-        />
-      </div>
+        <div>
+          <Typography>Marks</Typography>
+          <Typography>89</Typography>
+        </div>
+        <div>
+          <Typography>Subject</Typography>
+          <Typography>Math</Typography>
+        </div>
+      </CardContent>
     </Card>
   </>
 );
