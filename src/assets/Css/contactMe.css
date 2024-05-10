@@ -1,10 +1,11 @@
 .contact-container {
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 40px;
+  margin-top: 30px;
 }
 .submit-button {
-  color: black;
-  background-color: #dcdef7;
+  color:var(--text-white);
+  background-color: var(--blue);
 
   display: flex;
   justify-content: space-around;
@@ -17,4 +18,18 @@
   box-shadow: var(--shadow);
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.contact-us span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 5px;
+}
+.contact-us-icon {
+  background-color: var(--blue);
+  box-shadow: var(--shadow);
+}
+.contact-us {
+  margin-bottom: 20px;
+  display: flex;
 }
