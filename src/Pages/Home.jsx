@@ -5,6 +5,7 @@ import {
   ContactMe,
   MyTeam,
   SaifCoaching,
+  TopPerformer,
 } from "../Components";
 import { Grid } from "@mui/material";
 
@@ -19,7 +20,9 @@ const Home = () => {
           <MyTeam />
         </Grid>
 
-        <div className="container">Top</div>
+        <div className="container">
+          <TopPerformer />
+        </div>
       </Grid>
 
       <ContactMe />

@@ -19,9 +19,9 @@ const Subjects = () => {
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
   const subjects = [
-    { name: "Owner", img: owner, bg_color: "#8cf2dd" },
-    { name: "Teacher 1", img: teacher1, bg_color: "#ffec90" },
-    { name: "Teacher 2", img: teacher2, bg_color: "#74e6ff" },
+    { name: "Owner", img: owner },
+    { name: "Teacher 1", img: teacher1 },
+    { name: "Teacher 2", img: teacher2 },
   ];
 
   return (

@@ -1,0 +1,43 @@
+.performer-container * {
+  box-sizing: border-box;
+}
+.performer-20 {
+ 
+  margin-top: 30px;
+}
+
+[class*="col-"] {
+  padding: 10px;
+}
+.performer-cards {
+  box-shadow: var(--shadow);
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px;
+}
+.team-name {
+  font-family: "Poppins";
+  font-weight: 500;
+ 
+}
+
+.top-performer span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 5px;
+}
+.top-performer-icon {
+  background-color: var(--blue);
+  box-shadow: var(--shadow);
+}
+.top-performer {
+  margin-bottom: 20px;
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 10px;
+  }
+}
