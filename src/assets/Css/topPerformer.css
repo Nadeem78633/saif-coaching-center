@@ -18,7 +18,7 @@
 }
 .team-name {
   font-family: "Poppins";
-  font-weight: 500;
+  font-weight: 600;
  
 }
 
@@ -36,7 +36,21 @@
 .top-performer {
   margin-bottom: 20px;
   display: flex;
+  padding-left: 5px;
 }
+.performer-name {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.performer-name span {
+  color:#8a8a8a;
+  display: block;
+  float: right;
+  clear: right; /* Clears the float to prevent elements from wrapping */
+  margin-right: 10px; /* Adjust as needed */
+}
+
 @media screen and (max-width: 800px) {
   .container {
     padding: 10px;

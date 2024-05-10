@@ -1,6 +1,8 @@
 import ReactCaroussel from "react-caroussel";
 import "react-caroussel/dist/index.css";
 import "../assets/Css/topPerformer.css";
+import Divider from "@mui/material/Divider";
+
 import {
   Card,
   CardContent,
@@ -25,17 +27,18 @@ const Cards = ({ index }) => (
         alt="owner"
       />
       <CardContent>
-        <div>
-          <Typography className="name">Name : Suhel</Typography>
-        </div>
-        <div>
-          <Typography>Marks</Typography>
-          <Typography>89</Typography>
-        </div>
-        <div>
-          <Typography>Subject</Typography>
-          <Typography>Math</Typography>
-        </div>
+        <Typography className="performer-name">
+          Name <span>Suhel</span>
+        </Typography>
+        <Divider />
+        <Typography className="performer-name">
+          Marks <span>89</span>
+        </Typography>
+        <Divider />
+        <Typography className="performer-name">
+          Subject <span>Math</span>
+        </Typography>
+        <Divider />
       </CardContent>
     </Card>
   </>
