@@ -7,7 +7,7 @@ import location from "../assets/img/findUs/location.svg";
 import "../assets/Css/findUs.css";
 
 const FindUs = () => {
-  const handleButtonClick = () => {
+  const handleLocationClick = () => {
     // Coordinates for the location
     const latitude = 28.750297; // Example latitude
     const longitude = 79.499144; // Example longitude
@@ -19,9 +19,20 @@ const FindUs = () => {
     window.open(mapsUrl, "_blank");
   };
 
+  const handleWhatsAppClick = () => {
+    // Phone number for WhatsApp
+    const phoneNumber = "+91 6397711722"; // Replace with your phone number
+
+    // WhatsApp URL with parameters
+    const whatsAppUrl = `https://wa.me/${phoneNumber}`;
+
+    // Open the URL in a new tab
+    window.open(whatsAppUrl, "_blank");
+  };
+
   const icons = [
-    { id: 1, icon: whatsApp, title: "WhatsApp" },
-    { id: 2, icon: location, title: "Location", click: handleButtonClick },
+    { id: 1, icon: whatsApp, title: "WhatsApp", click: handleWhatsAppClick },
+    { id: 2, icon: location, title: "Location", click: handleLocationClick },
     { id: 3, icon: facebook, title: "Facebook" },
   ];
 
