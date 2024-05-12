@@ -8,7 +8,7 @@ import {
   TopPerformer,
   FindUs,
   Address,
-  CopyRight
+  CopyRight,
 } from "../Components";
 import { Grid } from "@mui/material";
 
@@ -37,7 +37,8 @@ const Home = () => {
           <Address />
         </Grid>
       </Grid>
-      <CopyRight/>
+      <CopyRight />
+  
     </div>
   );
 };
