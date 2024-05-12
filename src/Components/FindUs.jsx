@@ -30,10 +30,19 @@ const FindUs = () => {
     window.open(whatsAppUrl, "_blank");
   };
 
+  const handleFacebookClick = () => {
+    // Facebook profile URL
+    const facebookUrl =
+      "https://www.facebook.com/profile.php?id=100057354919445"; // Replace with the Facebook profile URL
+
+    // Open the URL in a new tab
+    window.open(facebookUrl, "_blank");
+  };
+
   const icons = [
     { id: 1, icon: whatsApp, title: "WhatsApp", click: handleWhatsAppClick },
     { id: 2, icon: location, title: "Location", click: handleLocationClick },
-    { id: 3, icon: facebook, title: "Facebook" },
+    { id: 3, icon: facebook, title: "Facebook", click: handleFacebookClick },
   ];
 
   return (
