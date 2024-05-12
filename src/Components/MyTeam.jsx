@@ -15,7 +15,7 @@ import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
 import teacher2 from "../assets/img/Teacher/teacher2.jpeg";
 import "../assets/Css/myTeam.css";
 
-const Subjects = () => {
+const MyTeam = () => {
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
   const subjects = [
@@ -121,4 +121,4 @@ const Subjects = () => {
   );
 };
 
-export default Subjects;
+export default MyTeam;

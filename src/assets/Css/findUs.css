@@ -1,0 +1,18 @@
+.find-us span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 5px;
+}
+.find-us {
+  margin-bottom: 20px;
+  display: flex;
+}
+.find-us-icon {
+  background-color: var(--blue);
+  box-shadow: var(--shadow);
+}
+.find-us-icons-container{
+  display: flex;
+  justify-content: space-between;
+}

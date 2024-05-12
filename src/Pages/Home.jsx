@@ -6,6 +6,7 @@ import {
   MyTeam,
   SaifCoaching,
   TopPerformer,
+  FindUs,
 } from "../Components";
 import { Grid } from "@mui/material";
 
@@ -26,6 +27,7 @@ const Home = () => {
       </Grid>
 
       <ContactMe />
+      <FindUs />
     </div>
   );
 };
