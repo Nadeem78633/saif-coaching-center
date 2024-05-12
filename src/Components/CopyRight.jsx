@@ -8,7 +8,7 @@ const CopyRight = () => {
       <div className="copyright-container">
         <Typography className="copy">
          
-          &copy; {year} <span className="copy-nadeem">Saif Coaching</span> . .
+          &copy; {year} <span className="copy-nadeem">Saif Coaching</span> . 
         </Typography>
       </div>
     </>

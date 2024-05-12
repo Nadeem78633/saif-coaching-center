@@ -65,7 +65,7 @@ const CarouselForTeamStudent = () => {
             speed={3}
             display={{
               dots: true,
-              arrows: false,
+              arrows: true,
             }}
           >
             <Cards />
