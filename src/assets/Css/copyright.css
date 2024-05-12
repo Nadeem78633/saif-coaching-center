@@ -2,13 +2,10 @@
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  margin-top: 50px;
 }
 .copy{
-    color: white;
+    color:var(--blue);
     font-family: "Poppins";
-}
-.copy-nadeem{
-    color: #fe9a02;
-    font-family: "Overpass", sans-serif;
-    font-weight: bold;
+    font-weight: 500;
 }

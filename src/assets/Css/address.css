@@ -1,0 +1,22 @@
+.address span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.address {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.address-icon {
+  background-color: var(--blue);
+  box-shadow: var(--shadow);
+}
+.gray-text{
+    color: var(--gray-text);
+    font-family: "Poppins";
+    font-weight: 500;
+    margin-left: 20px;
+}
