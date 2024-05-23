@@ -78,6 +78,9 @@ const CarouselForTeamStudent = () => {
             <Cards />
             <Cards />
             <Cards />
+                        <Cards />
+            <Cards />
+
           </ReactCaroussel>
         ) : (
           <ReactCaroussel
