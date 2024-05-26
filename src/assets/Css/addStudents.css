@@ -1,0 +1,14 @@
+.outerbar {
+  width: 100%;
+  background-color: #ddd; /* Background color of the progress bar container */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.innerbar {
+  height: 20px; /* Height of the progress bar */
+  background-color: #4caf50; /* Color of the progress bar */
+  text-align: center; /* Center align text within the progress bar */
+  line-height: 20px; /* Center vertically within the progress bar */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+}

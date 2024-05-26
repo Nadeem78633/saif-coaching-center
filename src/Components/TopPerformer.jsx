@@ -2,6 +2,8 @@ import ReactCaroussel from "react-caroussel";
 import "react-caroussel/dist/index.css";
 import "../assets/Css/topPerformer.css";
 import Divider from "@mui/material/Divider";
+import { useContext } from "react";
+import { StudentsContext } from "../context/StudentsProvider";
 
 import {
   Card,
@@ -14,92 +16,86 @@ import {
 import GroupIcon from "@mui/icons-material/Group";
 
 import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
-const Cards = ({ index }) => (
-  <>
+const Cards = ({ student }) => {
+  console.log(student);
+  return (
     <Card className="performer-cards">
-      <CardMedia
-        component="img"
-        sx={{
-          height: "200px",
-          objectFit: "fill",
-        }}
-        image={teacher1}
-        alt="owner"
-      />
-      <CardContent>
-        <Typography className="performer-name">
-          Name <span>Suhel</span>
-        </Typography>
-        <Divider />
-        <Typography className="performer-name">
-          Marks <span>89</span>
-        </Typography>
-        <Divider />
-        <Typography className="performer-name">
-          Subject <span>Math</span>
-        </Typography>
-        <Divider />
-      </CardContent>
+      <div style={{ height: "300px" }}>
+        <CardMedia
+          component="img"
+          sx={{
+            height: "100%",
+            width: "100%",
+            objectFit: "cover",
+          }}
+          image={student.imageUrl}
+          alt="owner"
+        />
+      </div>
     </Card>
-  </>
-);
+  );
+};
 
 const CarouselForTeamStudent = () => {
+  const { students } = useContext(StudentsContext);
+
   const isSmallScreen = useMediaQuery("(max-width:600px)");
   return (
     <div className="performer-20">
       <Typography variant="h6" className="top-performer">
         <Avatar className="top-performer-icon">
-          <GroupIcon sytle={{ color: "white" }} />
+          <GroupIcon style={{ color: "white" }} />
         </Avatar>
         <span>Our Top Performer</span>
       </Typography>
-      <Typography
-        style={{
-          textAlign: "center",
-          fontFamily: "Poppins",
-          fontSize: "20px",
-          fontWeight: 600,
-        }}
-      >
-        Year
-      </Typography>
-      <div className="performer-container">
-        {isSmallScreen ? (
-          <ReactCaroussel
-            infinite={true}
-            autoplay={true}
-            speed={3}
-            display={{
-              dots: true,
-              arrows: true,
+      {Object.keys(students).map((year) => (
+        <div key={year}>
+          <Typography
+            style={{
+              textAlign: "center",
+              fontFamily: "Poppins",
+              fontSize: "20px",
+              fontWeight: 600,
+              marginTop: "30px",
             }}
           >
-            <Cards />
-            <Cards />
-            <Cards />
-          </ReactCaroussel>
-        ) : (
-          <ReactCaroussel
-            slidesToShow={3}
-            slidesToScroll={1}
-            infinite={true}
-            autoplay={true}
-            speed={3}
-            style={{ color: "blue" }}
-            display={{
-              dots: true,
-              arrows: true,
-            }}
-          >
-            {Array(9)
-              .fill(0)
-              .map((_, index) => (
-                <Cards key={index} index={index} />
-              ))}
-          </ReactCaroussel>
-        )}
-      </div>
+            {year}
+          </Typography>
+          <div className="performer-container">
+            {isSmallScreen ? (
+              <ReactCaroussel
+                infinite={true}
+                autoplay={true}
+                speed={3}
+                display={{
+                  dots: true,
+                  arrows: true,
+                }}
+              >
+                {students[year].map((student, index) => (
+                  <Cards key={student.id} student={student} />
+                ))}
+              </ReactCaroussel>
+            ) : (
+              <ReactCaroussel
+                slidesToShow={3}
+                slidesToScroll={1}
+                infinite={true}
+                autoplay={true}
+                speed={3}
+                display={{
+                  dots: true,
+                  arrows: true,
+                }}
+              >
+                {students[year].map((student, index) => (
+                  <Cards key={student.id} student={student} />
+                ))}
+              </ReactCaroussel>
+            )}
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

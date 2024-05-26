@@ -22,7 +22,7 @@ const SocialMedia = () => {
 
   useEffect(() => {
     links.forEach((link) => setDividerWidth(link.id));
-  }, []); // Run only once on mount
+  }, []); 
 
   return (
     <div className="margin-bottom">
