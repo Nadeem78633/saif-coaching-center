@@ -60,7 +60,9 @@ const SaifCoaching = () => {
       <Dialog
         open={open}
         onClose={handleClose}
-
+        fullWidth
+        maxWidth="sm" // You can set this to 'xs', 'sm', 'md', 'lg', 'xl' depending on your needs
+        PaperProps={{ className: "responsive-dialog" }} // Add this line
       >
         <DialogTitle>
           <IconButton
@@ -72,7 +74,7 @@ const SaifCoaching = () => {
           </IconButton>
         </DialogTitle>
         <Divider style={{ marginTop: "20px", height: "4px" }} />
-        <DialogContent style={{padding:'0px'}}>
+        <DialogContent style={{ padding: "0px" }}>
           <Login />
         </DialogContent>
       </Dialog>

@@ -27,7 +27,7 @@ const Login = () => {
 
   return (
     <>
-      <Card>
+      <Card style={{width:'100%'}}>
         <CardContent className="login-content">
           <Typography className="login-text">Login</Typography>
           <Typography className="label-text">Email address</Typography>
