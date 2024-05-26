@@ -59,7 +59,6 @@ const CarouselForTeamStudent = () => {
               marginTop: "30px",
             }}
           >
-<<<<<<< HEAD
             {year}
           </Typography>
           <div className="performer-container">
@@ -97,36 +96,6 @@ const CarouselForTeamStudent = () => {
           </div>
         </div>
       ))}
-=======
-            <Cards />
-            <Cards />
-            <Cards />
-                        <Cards />
-            <Cards />
-
-          </ReactCaroussel>
-        ) : (
-          <ReactCaroussel
-            slidesToShow={3}
-            slidesToScroll={1}
-            infinite={true}
-            autoplay={true}
-            speed={3}
-            style={{ color: "blue" }}
-            display={{
-              dots: true,
-              arrows: true,
-            }}
-          >
-            {Array(9)
-              .fill(0)
-              .map((_, index) => (
-                <Cards key={index} index={index} />
-              ))}
-          </ReactCaroussel>
-        )}
-      </div>
->>>>>>> a070bfb4db565aff3124210b8c7b0b03b8b87552
     </div>
   );
 };
