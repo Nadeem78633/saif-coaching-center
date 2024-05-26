@@ -1,18 +1,28 @@
-import { Avatar, Typography } from "@mui/material";
+import {
+  Avatar,
+  Typography,
+  Dialog,
+  DialogTitle,
+  IconButton,
+} from "@mui/material";
 import React, { useState } from "react";
 import "../assets/Css/saifCoaching.css";
 import BookIcon from "@mui/icons-material/Book";
 import saif from "../assets/img/Teacher/saif.jpg";
-import Dialog from "@mui/material/Dialog";
 import { Login } from "../Pages";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+
 const SaifCoaching = () => {
   const [open, setOpen] = useState(false);
+
   const handleOpen = () => {
     setOpen(true);
   };
+
   const handleClose = () => {
     setOpen(false);
   };
+
   return (
     <>
       <div className="saif-container">
@@ -27,7 +37,7 @@ const SaifCoaching = () => {
               fontSize: "20px",
               marginLeft: "5px",
               fontWeight: 700,
-              fontFamily: "lato",
+              fontFamily: "Lato",
             }}
           >
             Saif Coaching
@@ -35,7 +45,7 @@ const SaifCoaching = () => {
         </button>
         <Avatar
           variant="round"
-          style={{ width: "50px", height: "50px",cursor:'pointer' }}
+          style={{ width: "50px", height: "50px", cursor: "pointer" }}
           onClick={handleOpen}
         >
           <img
@@ -46,9 +56,19 @@ const SaifCoaching = () => {
         </Avatar>
       </div>
       <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>
+          <IconButton
+            onClick={handleClose}
+            aria-label="close"
+            style={{ position: "absolute", right: 1, top: 1 }}
+          >
+            <CloseRoundedIcon />
+          </IconButton>
+        </DialogTitle>
         <Login />
       </Dialog>
     </>
   );
 };
+
 export default SaifCoaching;

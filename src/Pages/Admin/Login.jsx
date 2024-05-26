@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { TextField,Card, CardContent, Typography, Button } from "@mui/material";
+import {
+  TextField,
+  Card,
+  CardContent,
+  Typography,
+  Button,
+} from "@mui/material";
 // Css
-import '../../assets/Css/login.css'
+import "../../assets/Css/login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, logInWithEmailAndPassword } from "../../firebase.js";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -24,16 +30,18 @@ const Login = () => {
       <Card>
         <CardContent className="login-content">
           <Typography className="login-text">Login</Typography>
-          <Typography>Email address</Typography>
+          <Typography className="label-text">Email address</Typography>
           <TextField
+            className="login-textfield"
             variant="standard"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="text"
             placeholder="Email"
           />
-          <Typography>Password</Typography>
+          <Typography className="label-text">Password</Typography>
           <TextField
+            className="login-textfield"
             variant="standard"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -41,13 +49,14 @@ const Login = () => {
             placeholder="Password"
           />
 
-          <Link to="/reset">Forgot Password?</Link>
+          <Link to="/reset" className="forgot-password">Forgot Password?</Link>
 
           <Button
             onClick={() => logInWithEmailAndPassword(email, password)}
             variant="contained"
+            className="login-button"
           >
-            LOGIN
+            Login
           </Button>
         </CardContent>
       </Card>
