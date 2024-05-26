@@ -7,9 +7,9 @@ import {
   Button,
 } from "@mui/material";
 // Css
-import "../../assets/Css/login.css";
+import "../assets/Css/login.css";
 import { Link, useNavigate } from "react-router-dom";
-import { auth, logInWithEmailAndPassword } from "../../firebase.js";
+import { auth, logInWithEmailAndPassword } from "../firebase.js";
 import { useAuthState } from "react-firebase-hooks/auth";
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -49,7 +49,9 @@ const Login = () => {
             placeholder="Password"
           />
 
-          <Link to="/reset" className="forgot-password">Forgot Password?</Link>
+          <Link to="/reset" className="forgot-password">
+            Forgot Password?
+          </Link>
 
           <Button
             onClick={() => logInWithEmailAndPassword(email, password)}

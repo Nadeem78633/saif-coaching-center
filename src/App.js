@@ -3,14 +3,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import "./assets/Css/app.css";
 
-import {
-  DashboardLayout,
-  Error,
-  Home,
-  Login,
-  PrivateRoute,
-  Dashboard,
-} from "./Pages";
+import { DashboardLayout, Error, Home, PrivateRoute, Dashboard } from "./Pages";
 
 const router = createBrowserRouter([
   {

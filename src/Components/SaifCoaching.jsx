@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import "../assets/Css/saifCoaching.css";
 import BookIcon from "@mui/icons-material/Book";
 import saif from "../assets/img/Teacher/saif.jpg";
-import { Login } from "../Pages";
+import Login from "./Login";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 
 const SaifCoaching = () => {
