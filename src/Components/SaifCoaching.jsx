@@ -5,7 +5,6 @@ import {
   DialogTitle,
   IconButton,
   DialogContent,
-  Divider,
 } from "@mui/material";
 import React, { useState } from "react";
 import "../assets/Css/saifCoaching.css";
@@ -73,7 +72,7 @@ const SaifCoaching = () => {
             <CloseRoundedIcon />
           </IconButton>
         </DialogTitle>
-        <Divider style={{ marginTop: "20px", height: "4px" }} />
+
         <DialogContent style={{ padding: "0px" }}>
           <Login />
         </DialogContent>

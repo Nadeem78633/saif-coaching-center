@@ -40,33 +40,6 @@
   display: flex;
   justify-content: center; /* Center the button horizontally */
   width: 100%; /* Ensure the div takes the full width of its container */
+margin-top: 20px;
 }
 
-/* Add media queries for responsive design */
-@media (min-width: 1280px) {
-  .responsive-dialog {
-    width: 40% !important;
-    max-width: none !important;
-  }
-}
-
-@media (min-width: 960px) and (max-width: 1279px) {
-  .responsive-dialog {
-    width: 40% !important;
-    max-width: none !important;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 959px) {
-  .responsive-dialog {
-    width: 80% !important;
-    max-width: none !important;
-  }
-}
-
-@media (max-width: 599px) {
-  .responsive-dialog {
-    width: 100% !important;
-    max-width: none !important;
-  }
-}
