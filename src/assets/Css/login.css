@@ -1,0 +1,10 @@
+.login-content{
+    display: flex;
+    flex-direction: column;
+}
+.login-text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Poppins";
+}

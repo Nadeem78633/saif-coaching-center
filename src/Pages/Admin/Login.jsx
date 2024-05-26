@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Grid, Card, CardContent, Typography, Button } from "@mui/material";
-
+import { TextField,Card, CardContent, Typography, Button } from "@mui/material";
+// Css
+import '../../assets/Css/login.css'
 import { Link, useNavigate } from "react-router-dom";
-import TextField from "@mui/material/TextField";
-
 import { auth, logInWithEmailAndPassword } from "../../firebase.js";
 import { useAuthState } from "react-firebase-hooks/auth";
 const Login = () => {
@@ -23,8 +22,8 @@ const Login = () => {
   return (
     <>
       <Card>
-        <CardContent>
-          <Typography>Login</Typography>
+        <CardContent className="login-content">
+          <Typography className="login-text">Login</Typography>
           <Typography>Email address</Typography>
           <TextField
             variant="standard"

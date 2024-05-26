@@ -11,7 +11,6 @@ import {
   PrivateRoute,
   Dashboard,
 } from "./Pages";
-import Slider1 from "./Components/Slider1";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +19,7 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { index: true, element: <Home /> },
-      { path: "login", element: <Login /> },
-      { path: "slider", element: <Slider1 /> },
+
       {
         path: "dashboard",
         element: (

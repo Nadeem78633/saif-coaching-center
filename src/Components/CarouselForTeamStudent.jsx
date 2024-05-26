@@ -3,12 +3,12 @@ import "react-caroussel/dist/index.css";
 import "../assets/Css/carouselForTeamStudent.css";
 import {
   Card,
-  CardContent,
+ 
   CardMedia,
   Typography,
   useMediaQuery,
 } from "@mui/material";
-import owner from "../assets/img/Teacher/owner.jpeg";
+
 import teacher1 from "../assets/img/Teacher/teacher1.jpeg";
 const Cards = ({ index }) => (
   <>
