@@ -52,14 +52,15 @@ const Login = () => {
           <Link to="/reset" className="forgot-password">
             Forgot Password?
           </Link>
-
-          <Button
-            onClick={() => logInWithEmailAndPassword(email, password)}
-            variant="contained"
-            className="login-button"
-          >
-            Login
-          </Button>
+          <div className="center-button">
+            <Button
+              onClick={() => logInWithEmailAndPassword(email, password)}
+              variant="contained"
+              className="login-button"
+            >
+              Login
+            </Button>
+          </div>
         </CardContent>
       </Card>
     </>

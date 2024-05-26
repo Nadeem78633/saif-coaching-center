@@ -4,6 +4,8 @@ import {
   Dialog,
   DialogTitle,
   IconButton,
+  DialogContent,
+  Divider,
 } from "@mui/material";
 import React, { useState } from "react";
 import "../assets/Css/saifCoaching.css";
@@ -55,17 +57,24 @@ const SaifCoaching = () => {
           />
         </Avatar>
       </div>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+
+      >
         <DialogTitle>
           <IconButton
             onClick={handleClose}
             aria-label="close"
-            style={{ position: "absolute", right: 1, top: 1 }}
+            style={{ position: "absolute", right: 10, top: 10 }}
           >
             <CloseRoundedIcon />
           </IconButton>
         </DialogTitle>
-        <Login />
+        <Divider style={{ marginTop: "20px", height: "4px" }} />
+        <DialogContent style={{padding:'0px'}}>
+          <Login />
+        </DialogContent>
       </Dialog>
     </>
   );
